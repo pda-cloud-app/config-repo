@@ -1,0 +1,12 @@
+server.port=9025
+
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2
+spring.h2.console.settings.web-allow-others=true
+spring.datasource.url=jdbc:h2:mem:pda;MODE=MySQL;DB_CLOSE_ON_EXIT=TRUE;FILE_LOCK=NO
+spring.datasource.schema=classpath:sql/schema.sql
+spring.datasource.data=classpath:sql/data.sql
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
